@@ -145,18 +145,8 @@ setup_env() {
     return
   fi
 
-  info "Creating .env from template..."
-  cat > .env <<'ENVEOF'
-# PersonalMedia environment variables
-# Get your Spotify client ID at https://developer.spotify.com/dashboard
-VITE_SPOTIFY_CLIENT_ID=
-
-# Get your YouTube/Google client ID at https://console.cloud.google.com/apis/credentials
-VITE_YOUTUBE_CLIENT_ID=
-
-# Optional: CORS proxy URL for podcast RSS feeds that block browser requests
-# VITE_CORS_PROXY_URL=
-ENVEOF
+  info "Creating .env from .env.example..."
+  cp .env.example .env
 
   warn ".env file created — fill in your API client IDs before running the app"
 }
