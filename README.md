@@ -28,7 +28,15 @@ Designate any podcast feed or YouTube subscription as an **update entry** with a
 
 This lets you stay current on fast-moving feeds without manually checking for new episodes or videos.
 
-## Getting Started
+## Quick Start (no local setup)
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/mwmoseley/PersonalMedia)
+
+Click the badge above to open the project in StackBlitz. It runs a full Node.js environment in your browser — no local install needed. Dependencies install automatically and the dev server starts on open.
+
+Once it's running, add your API keys to `.env` in the StackBlitz file explorer (the template is created for you).
+
+## Getting Started (local)
 
 ### Prerequisites
 
@@ -47,6 +55,14 @@ VITE_YOUTUBE_CLIENT_ID=your_google_client_id
 ```
 
 ### Install and Run
+
+The setup script handles everything, including installing Node.js if needed:
+
+```bash
+./setup.sh
+```
+
+Or manually:
 
 ```bash
 npm install
